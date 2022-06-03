@@ -1,0 +1,703 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "italicSignature";
+  src: url(/fonts/Artisan/Artisan\ Signature\ Italic\ OTF.otf);
+}
+@font-face {
+  font-family: "Signature";
+  src: url(/fonts/Artisan/Artisan\ Signature\ OTF.otf);
+}
+@font-face {
+  font-family: "Content";
+  src: url(/fonts/Content/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Main";
+  src: url(/fonts/Main/MerriweatherSans-Regular.ttf);
+}
+@font-face {
+  font-family: "BoldParagraph";
+  src: url(/fonts/Paragraph/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "RegularParagraph";
+  src: url(/fonts/Paragraph/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "ThinParagraph";
+  src: url(/fonts/Paragraph/Poppins-Thin.ttf);
+}
+/* -------------------- Navbar --------------------  */
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+  background-color: white;
+  transition: 0.2s;
+}
+#navbar.shadow {
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+.list {
+  display: flex;
+  margin: 0px 1.5rem;
+}
+.list li {
+  list-style: none;
+}
+
+.list li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 2px 7px;
+  color: rgb(0, 0, 0);
+  font-family: Main, sans-serif;
+}
+#logo a {
+  margin: 0px 1.5rem;
+}
+#logo a img {
+  height: 40px;
+}
+.list li a:hover {
+  color: hsl(260, 100%, 51%);
+  border-radius: 5px;
+}
+
+/* -------------***** Navbar ****-------------  */
+
+/* -------------------- Section One --------------------  */
+#sectionOne {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+}
+#maindivLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainDivLeftFlex {
+  display: flex;
+}
+.verticalText {
+  transform: rotate(270deg);
+  margin: 5rem -3rem 0rem 0rem;
+  font-family: Content, serif;
+  font-size: 2.5rem;
+}
+.maindivLeftList {
+  margin: 10px 0px;
+}
+.mainDivLeftFlex li {
+  list-style: none;
+}
+.listStyle a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: RegularParagraph, serif;
+  padding: 5px;
+}
+#maindivRight {
+  width: 60%;
+  margin-top: 80px;
+}
+.centerPage {
+  padding: 15px 19px 0px 19px;
+}
+.textCenter {
+  margin-left: 51px;
+  margin-top: 14px;
+  font-family: Signature, serif;
+}
+.pageNumber {
+  bottom: 1px;
+  left: 50%;
+  position: absolute;
+}
+.firstFlipbookPage {
+  display: flex;
+}
+.firstimage {
+  height: auto;
+  width: 260px;
+  object-fit: cover;
+  bottom: 10px;
+  position: absolute;
+}
+.verticalTextFlipbook {
+  transform: rotate(270deg);
+  margin-top: 195px;
+  right: -18px;
+  font-family: ThinParagraph, serif;
+  font-size: 15px;
+  position: absolute;
+}
+.lastimage {
+  height: auto;
+  width: 267px;
+  object-fit: cover;
+}
+.list {
+  list-style: none;
+}
+
+/* -------------***** Section One ****-------------  */
+
+/* -------------------- Section Two --------------------  */
+#sectionTwo {
+  padding: 50px 10%;
+}
+.sectionTwoAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+.sectionTwoDiv {
+  display: flex;
+}
+.photo {
+  width: 50%;
+}
+.sectionTwoText {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  width: 50%;
+}
+.sectionTwoText p {
+  font-family: RegularParagraph, serif;
+  margin-bottom: 1rem;
+}
+.infoBox {
+  display: flex;
+}
+.infoBox div {
+  font-family: RegularParagraph, serif;
+  padding: 12px 0px 0px 5px;
+  font-size: 1.2rem;
+}
+.infoBox div a {
+  text-decoration: none;
+  color: black;
+}
+.infoBox div a:hover {
+  color: hsl(260, 100%, 51%);
+}
+.aboutIcon {
+  display: flex;
+}
+.aboutIcon div {
+  margin: 0rem 2rem 0rem 0rem;
+}
+/* -------------***** Section Two ****-------------  */
+
+/* -------------------- Section Three --------------------  */
+#sectionThree {
+  padding: 50px 10%;
+}
+#sectionThree h1 {
+  margin-bottom: 2rem;
+}
+.sectionThreeDiv {
+  display: flex;
+}
+.sectionThreeDiv div {
+  width: 32%;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid #4a00e0;
+  box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+}
+.sectionThreeDiv div:hover {
+  transform: scale(1.1);
+}
+
+.skillsTopic {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: BoldParagraph, serif;
+  font-size: 18px;
+  color: rgb(64, 66, 69);
+}
+
+/* -------------***** Section Three ****-------------  */
+
+/* -------------------- Section Four --------------------  */
+#sectionFour {
+  /* min-height: 100vh; */
+  padding: 50px 10%;
+}
+#sectionFour div h1 {
+  margin: 2rem;
+}
+.sectionFourServices {
+  box-sizing: border-box;
+  font-family: RegularParagraph, sans-serif !important;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+  align-items: stretch;
+  width: 100%;
+  margin: auto 0;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .grid {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .grid {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    width: 1140px;
+  }
+}
+
+.mycard {
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  padding: 40px 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.mycard:hover {
+  transform: scale(1.1);
+}
+
+.basic,
+.basic .title .fa {
+  background: linear-gradient(-45deg, #f403d1, #64b5f6);
+}
+
+.standard,
+.standard .title .fa {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+
+.premium,
+.premium .title .fa {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.mycard::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  transform: skewY(-5deg) scale(1.5);
+}
+
+.title .fa {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.price {
+  position: relative;
+  z-index: 2;
+}
+.price h4 sup {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 20px;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+
+.option {
+  position: relative;
+  z-index: 2;
+}
+
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.mycard a {
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  margin: 30px auto 8px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* -------------***** Section Four ****-------------  */
+
+/* -------------------- Section Five --------------------  */
+#sectionFive {
+  /* height: 100vh; */
+  background-color: white;
+  padding: 50px 10%;
+}
+.sectionFiveClients {
+  align-items: center;
+  display: flex;
+  font-family: "Merriweather", serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 80px;
+}
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  flex-wrap: wrap;
+}
+.container {
+  border-radius: 50%;
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.48);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 400px;
+}
+.container:after {
+  background-color: white;
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+.container:hover {
+  transform: scale(0.54);
+}
+.container-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -200px;
+}
+.circle {
+  background-color: #fee7d3;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 190px;
+  width: 350px;
+}
+.img2 {
+  left: -22px;
+  top: 128px;
+  width: 470px;
+}
+.img3 {
+  left: -20px;
+  top: 190px;
+  width: 415px;
+}
+.divider {
+  background: linear-gradient(
+    90deg,
+    rgba(69, 104, 220, 1) 0%,
+    rgba(176, 106, 179, 1) 100%
+  );
+  height: 1px;
+  width: 160px;
+}
+.name {
+  color: #404245;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.title {
+  color: #6e6e6e;
+  font-family: arial;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+}
+/* -------------***** Section Five ****-------------  */
+
+/* ------------------- Section Six ------------------  */
+#recentWork {
+  padding: 50px 10%;
+}
+.recentWorksContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.recentWorksContentImage {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.recentWorksContentImage img {
+  width: 100%;
+  display: block;
+}
+.recentWorksContentImage img:hover {
+  transition: transform 0.7s;
+  transform: scale(1.2);
+}
+/* -------------***** Section Six ****-------------  */
+
+/* -------------------- Section Footer --------------------  */
+#endFooter {
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(69, 104, 220, 1) 0%,
+    rgba(176, 106, 179, 1) 100%
+  );
+  flex-direction: column;
+  padding: 20px 10%;
+}
+.footerDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.footerSocialmedia h2 {
+  margin-bottom: 2px;
+  font-family: "BoldParagraph";
+  font-size: 20px;
+}
+.footerSocialmedia p {
+  font-family: "RegularParagraph";
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+.footerSocialicons {
+  display: flex;
+}
+.footerAbout h1 {
+  font-family: BoldParagraph, serif;
+  font-size: 30px;
+}
+.footerAbout div p {
+  margin: 2px 0px;
+  font-family: "RegularParagraph";
+  font-size: 12px;
+}
+.footerTextCenter {
+  text-align: center;
+  padding: 2%;
+  color: white;
+}
+.footerTextCenter h2 {
+  font-size: 17px;
+  margin-top: 10px;
+  font-family: "Main", serif;
+}
+.footerTextCenter h2 a {
+  color: hsl(260, 100%, 51%);
+  text-decoration: none;
+  font-family: "BoldParagraph";
+  font-size: 22px;
+  margin-left: 2px;
+}
+.footerMoveToTop {
+  width: 60px;
+}
+.footerMoveToTop a {
+  font-size: 10px;
+  color: white;
+  text-decoration: none;
+}
+.footerMoveToTop a img {
+  filter: invert(1);
+  width: 40px;
+}
+/* -------------***** Section Footer ****-------------  */
+
+/*----------------------------- Utilities  ---------------------*/
+.signatureFont {
+  font-family: italicSignature;
+  font-size: 2.1rem;
+  text-align: center;
+  margin: 0rem 0rem 4rem 4rem;
+}
+.hprimary {
+  color: rgb(64, 66, 69);
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+}
+.hprimaryBelow {
+  font-family: RegularParagraph, serif;
+  font-size: 14px;
+  color: rgb(64, 66, 69);
+}
+.hsecondary {
+  font-family: RegularParagraph, serif;
+}
+.btn {
+  border: 1px solid rgb(74, 0, 224);
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  width: 12.5rem;
+  border-radius: 10px;
+}
+.btn4 a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+.btn4 a:hover {
+  color: rgb(74, 0, 224);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(74, 0, 224);
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn4::before {
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.btn4::before {
+  height: 180%;
+}
+.btn4:hover::before {
+  height: 0%;
+}
+.iconStyle {
+  filter: invert(1);
+  width: 27px;
+  padding: 5px 5px 5px 0px;
+  margin-right: 9px;
+}
+/* ---------------------- Turn Effect ---------------------------  */
+#flipbook .page {
+  background-color: white;
+}
+#flipbook .shadow {
+  box-shadow: 0 4px 9px #666;
+}
+/* ------- For even page number -------  */
+#flipbook .even {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.95, #fff),
+    color-stop(1, #dadada)
+  );
+  background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+}
+/* -------**** For even page number ****-------  */
+/* ------- For odd page number -------  */
+#flipbook .odd {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(0.95, #fff),
+    color-stop(1, #dadada)
+  );
+  background-image: -webkit-linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  box-shadow: inset 0 0 5px #666;
+}
+/* -------**** For odd page number ****-------  */
+/* ----------------------***** Turn Effect *****---------------------------  */
